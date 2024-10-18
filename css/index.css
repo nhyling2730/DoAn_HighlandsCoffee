@@ -39,6 +39,7 @@ header {
     flex: 3;
     display: flex;
     color: #ffffff;
+    position: relative;
 }
 
 .menu li {
@@ -48,12 +49,29 @@ header {
     position: relative;
 }
 
+.menu li:hover {
+    font-weight: bold;
+}
+
+.menu > li a {
+    font-size: 12px;
+    display: block;
+}
+
 .sub-menu {
     position: absolute;
     border: 1px solid #f7d6b7;
     background-color: #f7d6b7;
     padding: 10px 0px 10px 20px;
-    display: flex;
+    display: none;
+    top: 100%;
+    left: 0;
+    width: 900px;
+    height: 1000px;
+}
+
+.menu > li:hover .sub-menu {
+    display: block; /* Hiển thị sub-menu khi rê chuột vào mục "THỰC ĐƠN" */
 }
 
 .menu li a {
@@ -133,6 +151,7 @@ header {
     cursor: pointer;
     margin-top: 22px;
     margin-right: 15px;
+    color: #ffffff;
 }
 
 .fa-user {
@@ -140,4 +159,15 @@ header {
     cursor: pointer;
     margin-top: 22px;
     margin-left: 5px;
+    color: #ffffff;
+}
+
+.fa-cart-arrow-down:hover {
+    cursor: pointer;
+    color: #7e440e;
+}
+
+.fa-user:hover {
+    cursor: pointer;
+    color: #7e440e;
 }

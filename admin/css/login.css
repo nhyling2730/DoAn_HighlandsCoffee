@@ -95,3 +95,9 @@ img{
     display: none;
 }
 
+span{
+    color: white;
+    font-size: small;
+    margin: 0 15px;
+}
+
